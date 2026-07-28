@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1d0c"/>
+      <stop offset="100%" stop-color="#0b0c04"/>
+    </linearGradient>
+    
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd880" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="limeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a3e635" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6a2a"/>
+      <stop offset="50%" stop-color="#f0cf8e"/>
+      <stop offset="100%" stop-color="#d9a441"/>
+    </linearGradient>
+
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#84cc16" stroke-width="0.5" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#gridPattern)"/>
+
+  <!-- Concentric Constellation Radar Rings (matching user's reference screenshot) -->
+  <g stroke="#84cc16" stroke-width="1" fill="none" opacity="0.2">
+    <circle cx="600" cy="310" r="270"/>
+    <circle cx="600" cy="310" r="210" stroke-dasharray="6 6"/>
+    <circle cx="600" cy="310" r="150"/>
+  </g>
+
+  <!-- Scene Specific Center Illustration -->
+  
+      <!-- Sacred Mountain Rishyamuka and Hanuman's Mace -->
+      <g transform="translate(600, 310)">
+        <circle cx="0" cy="0" r="200" fill="url(#limeGlow)" />
+
+        <!-- Mountain Peaks -->
+        <polygon points="-280,160 -100,-80 40,160" fill="#1c250a" stroke="#84cc16" stroke-width="1.5" />
+        <polygon points="-60,160 120,-120 280,160" fill="#29380d" stroke="#d9a441" stroke-width="2" />
+
+        <!-- Hanuman's Gada (Mace) of Power -->
+        <g transform="translate(0, 10)">
+          <!-- Handle -->
+          <line x1="0" y1="120" x2="0" y2="-60" stroke="#d9a441" stroke-width="10" stroke-linecap="round" />
+          <line x1="0" y1="120" x2="0" y2="-60" stroke="#fef08a" stroke-width="4" stroke-linecap="round" />
+          <!-- Mace Head -->
+          <circle cx="0" cy="-80" r="45" fill="url(#goldGrad)" stroke="#fef08a" stroke-width="3" filter="drop-shadow(0 0 15px #a3e635)" />
+          <path d="M -45 -80 L 45 -80 M 0 -125 L 0 -35" stroke="#78350f" stroke-width="3" />
+        </g>
+      </g>
+    
+
+  <!-- Decorative Outer Frame -->
+  <rect x="25" y="25" width="1150" height="625" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="1130" height="605" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Gold Corner Ornaments -->
+  <path d="M 25 65 L 25 25 L 65 25" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1175 65 L 1175 25 L 1135 25" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 25 610 L 25 650 L 65 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1175 610 L 1175 650 L 1135 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- Header Badge Text -->
+  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#84cc16" letter-spacing="5" opacity="0.95">АКТ III · ВСТРЕЧА С СУГРИВОЙ И ХАНУМАНОМ</text>
+
+  <!-- Main Title Text -->
+  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Братство с Лесной Армией Ванаров</text>
+</svg>

@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b1704"/>
+      <stop offset="100%" stop-color="#120901"/>
+    </linearGradient>
+    
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd880" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="limeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a3e635" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6a2a"/>
+      <stop offset="50%" stop-color="#f0cf8e"/>
+      <stop offset="100%" stop-color="#d9a441"/>
+    </linearGradient>
+
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#eab308" stroke-width="0.5" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#gridPattern)"/>
+
+  <!-- Concentric Constellation Radar Rings (matching user's reference screenshot) -->
+  <g stroke="#eab308" stroke-width="1" fill="none" opacity="0.2">
+    <circle cx="600" cy="310" r="270"/>
+    <circle cx="600" cy="310" r="210" stroke-dasharray="6 6"/>
+    <circle cx="600" cy="310" r="150"/>
+  </g>
+
+  <!-- Scene Specific Center Illustration -->
+  
+      <!-- Hanuman Holding Sanjivani Mountain -->
+      <g transform="translate(600, 310)">
+        <circle cx="0" cy="-20" r="210" fill="url(#goldGlow)" />
+
+        <!-- Sacred Mountain Dronagiri carried on Palm -->
+        <g transform="translate(0, -50)">
+          <!-- Mountain Mass -->
+          <polygon points="-160,60 0,-100 160,60" fill="#2d3748" stroke="#f59e0b" stroke-width="3" />
+          <polygon points="-100,60 0,-100 40,60" fill="#4a5568" />
+          <!-- Glowing Sanjivani Herbs on Mountain -->
+          <circle cx="-40" cy="-20" r="8" fill="#4ade80" filter="drop-shadow(0 0 10px #4ade80)" />
+          <circle cx="20" cy="-40" r="10" fill="#4ade80" filter="drop-shadow(0 0 12px #4ade80)" />
+          <circle cx="50" cy="10" r="7" fill="#4ade80" filter="drop-shadow(0 0 8px #4ade80)" />
+          <circle cx="-70" cy="20" r="9" fill="#4ade80" filter="drop-shadow(0 0 10px #4ade80)" />
+        </g>
+
+        <!-- Giant Open Hand Palm holding Mountain -->
+        <path d="M -120 70 C -80 130 80 130 120 70 L 80 150 L -80 150 Z" fill="#78350f" stroke="#d9a441" stroke-width="2" />
+      </g>
+    
+
+  <!-- Decorative Outer Frame -->
+  <rect x="25" y="25" width="1150" height="625" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="1130" height="605" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Gold Corner Ornaments -->
+  <path d="M 25 65 L 25 25 L 65 25" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1175 65 L 1175 25 L 1135 25" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 25 610 L 25 650 L 65 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1175 610 L 1175 650 L 1135 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- Header Badge Text -->
+  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#eab308" letter-spacing="5" opacity="0.95">АКТ IV · ВЕЛИКАЯ БИТВА НА ЛАНКЕ</text>
+
+  <!-- Main Title Text -->
+  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Гора Сандживани и Подвиг Ханумана</text>
+</svg>

@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071f17"/>
+      <stop offset="100%" stop-color="#020b08"/>
+    </linearGradient>
+    
+    <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd880" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="fireGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="purpleGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="blueGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="limeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a3e635" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="redGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a6a2a"/>
+      <stop offset="50%" stop-color="#f0cf8e"/>
+      <stop offset="100%" stop-color="#d9a441"/>
+    </linearGradient>
+
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#fef08a"/>
+    </linearGradient>
+
+    <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#10b981" stroke-width="0.5" stroke-opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="675" fill="url(#bgGrad)"/>
+  <rect width="1200" height="675" fill="url(#gridPattern)"/>
+
+  <!-- Concentric Constellation Radar Rings (matching user's reference screenshot) -->
+  <g stroke="#10b981" stroke-width="1" fill="none" opacity="0.2">
+    <circle cx="600" cy="310" r="270"/>
+    <circle cx="600" cy="310" r="210" stroke-dasharray="6 6"/>
+    <circle cx="600" cy="310" r="150"/>
+  </g>
+
+  <!-- Scene Specific Center Illustration -->
+  
+      <!-- Deep Jungle Radar and Sacred Hut -->
+      <g transform="translate(600, 310)">
+        <!-- Radar Map Circles as seen in user's screenshot -->
+        <circle cx="0" cy="-20" r="220" stroke="#10b981" stroke-width="1" fill="none" opacity="0.25" />
+        <circle cx="0" cy="-20" r="160" stroke="#d9a441" stroke-width="1.5" stroke-dasharray="6 6" fill="none" opacity="0.4" />
+        <circle cx="0" cy="-20" r="100" stroke="#10b981" stroke-width="1" fill="none" opacity="0.3" />
+
+        <!-- Mountain / Jungle Silhouettes -->
+        <path d="M -350 160 C -250 20 -150 120 -50 60 C 50 0 180 140 350 160 Z" fill="#062e21" opacity="0.8" />
+        <path d="M -300 160 C -180 60 -80 140 0 80 C 100 20 220 100 300 160 Z" fill="#0b4532" opacity="0.9" />
+
+        <!-- Glowing Nodes -->
+        <circle cx="-110" cy="-80" r="6" fill="#6ee7b7" filter="drop-shadow(0 0 8px #6ee7b7)" />
+        <circle cx="0" cy="-20" r="9" fill="#fcd34d" filter="drop-shadow(0 0 10px #fcd34d)" />
+        <circle cx="120" cy="-60" r="6" fill="#6ee7b7" filter="drop-shadow(0 0 8px #6ee7b7)" />
+
+        <!-- Hermitage Hut Silhouette -->
+        <polygon points="-60,160 0,90 60,160" fill="#041c14" stroke="#d9a441" stroke-width="2" />
+        <rect x="-30" y="120" width="60" height="40" fill="#020d09" stroke="#10b981" stroke-width="1" />
+      </g>
+    
+
+  <!-- Decorative Outer Frame -->
+  <rect x="25" y="25" width="1150" height="625" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-opacity="0.5"/>
+  <rect x="35" y="35" width="1130" height="605" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-opacity="0.25"/>
+
+  <!-- Gold Corner Ornaments -->
+  <path d="M 25 65 L 25 25 L 65 25" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1175 65 L 1175 25 L 1135 25" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 25 610 L 25 650 L 65 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+  <path d="M 1175 610 L 1175 650 L 1135 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- Header Badge Text -->
+  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#10b981" letter-spacing="5" opacity="0.95">АКТ II · ШУРПАНАКХА В ЛЕСУ ДАНДАКА</text>
+
+  <!-- Main Title Text -->
+  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Испытание в Глуши и Отпор Демонице</text>
+</svg>
