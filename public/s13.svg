@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2e1903"/>
-      <stop offset="100%" stop-color="#120900"/>
+      <stop offset="0%" stop-color="#1e142e"/>
+      <stop offset="100%" stop-color="#0a0612"/>
     </linearGradient>
     
     <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
@@ -48,7 +48,7 @@
     </linearGradient>
 
     <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f59e0b" stroke-width="0.5" stroke-opacity="0.1"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#c084fc" stroke-width="0.5" stroke-opacity="0.1"/>
     </pattern>
   </defs>
 
@@ -57,7 +57,7 @@
   <rect width="1200" height="675" fill="url(#gridPattern)"/>
 
   <!-- Concentric Constellation Radar Rings (matching user's reference screenshot) -->
-  <g stroke="#f59e0b" stroke-width="1" fill="none" opacity="0.2">
+  <g stroke="#c084fc" stroke-width="1" fill="none" opacity="0.2">
     <circle cx="600" cy="310" r="270"/>
     <circle cx="600" cy="310" r="210" stroke-dasharray="6 6"/>
     <circle cx="600" cy="310" r="150"/>
@@ -65,36 +65,29 @@
 
   <!-- Scene Specific Center Illustration -->
   
-      <!-- Coronation Crown & Glowing Diya Lamps of Diwali -->
+      <!-- Flying Flying Pushpaka Vimana Chariot & Paduka Slippers -->
       <g transform="translate(600, 310)">
-        <circle cx="0" cy="-20" r="220" fill="url(#goldGlow)" />
+        <circle cx="0" cy="-30" r="210" fill="url(#purpleGlow)" />
 
-        <!-- Grand Coronation Crown -->
+        <!-- Flying Chariot Pushpaka in Stars -->
         <g transform="translate(0, -60)">
-          <path d="M -110 60 L -130 -30 L -60 20 L 0 -70 L 60 20 L 130 -30 L 110 60 Z" fill="url(#goldGrad)" stroke="#ffffff" stroke-width="2.5" filter="drop-shadow(0 0 20px #f59e0b)" />
-          <circle cx="0" cy="-70" r="10" fill="#ef4444" />
-          <circle cx="-130" cy="-30" r="8" fill="#3b82f6" />
-          <circle cx="130" cy="-30" r="8" fill="#3b82f6" />
+          <!-- Chariot Dome -->
+          <path d="M -120 40 Q 0 -80 120 40 Z" fill="url(#goldGrad)" stroke="#fff" stroke-width="2" />
+          <path d="M -80 40 Q 0 -40 80 40 Z" fill="#581c87" />
+          <!-- Wheels -->
+          <circle cx="-80" cy="50" r="25" fill="none" stroke="#fcd34d" stroke-width="4" />
+          <circle cx="80" cy="50" r="25" fill="none" stroke="#fcd34d" stroke-width="4" />
         </g>
 
-        <!-- Array of Diwali Diya Lamps Below -->
-        <g transform="translate(0, 110)">
-          <!-- Center Main Diya -->
-          <path d="M -50 20 C -40 50 40 50 50 20 Z" fill="#78350f" stroke="#fcd34d" stroke-width="2" />
-          <path d="M 0 20 C -15 -10 0 -40 0 -40 C 0 -40 15 -10 0 20 Z" fill="#ffaa00" filter="drop-shadow(0 0 15px #ffaa00)" />
-          <path d="M 0 20 C -8 0 0 -25 0 -25 C 0 -25 8 0 0 20 Z" fill="#ffffff" />
-
-          <!-- Left Diya -->
-          <g transform="translate(-140, 10) scale(0.7)">
-            <path d="M -50 20 C -40 50 40 50 50 20 Z" fill="#78350f" stroke="#fcd34d" stroke-width="2" />
-            <path d="M 0 20 C -15 -10 0 -40 0 -40 C 0 -40 15 -10 0 20 Z" fill="#ffaa00" filter="drop-shadow(0 0 12px #ffaa00)" />
-          </g>
-
-          <!-- Right Diya -->
-          <g transform="translate(140, 10) scale(0.7)">
-            <path d="M -50 20 C -40 50 40 50 50 20 Z" fill="#78350f" stroke="#fcd34d" stroke-width="2" />
-            <path d="M 0 20 C -15 -10 0 -40 0 -40 C 0 -40 15 -10 0 20 Z" fill="#ffaa00" filter="drop-shadow(0 0 12px #ffaa00)" />
-          </g>
+        <!-- Sacred Golden Paduka (Sandals of Rama) on Pedestal -->
+        <g transform="translate(0, 90)">
+          <rect x="-90" y="10" width="180" height="20" fill="#3b0764" stroke="#d9a441" stroke-width="2" />
+          <!-- Left Sandal -->
+          <ellipse cx="-35" cy="0" rx="18" ry="32" fill="url(#goldGrad)" stroke="#fff" stroke-width="1.5" />
+          <circle cx="-35" cy="-18" r="6" fill="#fcd34d" />
+          <!-- Right Sandal -->
+          <ellipse cx="35" cy="0" rx="18" ry="32" fill="url(#goldGrad)" stroke="#fff" stroke-width="1.5" />
+          <circle cx="35" cy="-18" r="6" fill="#fcd34d" />
         </g>
       </g>
     
@@ -110,8 +103,8 @@
   <path d="M 1175 610 L 1175 650 L 1135 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
 
   <!-- Header Badge Text -->
-  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#f59e0b" letter-spacing="5" opacity="0.95">АКТ V · КОРОНАЦИЯ И ДИВАЛИ</text>
+  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#c084fc" letter-spacing="5" opacity="0.95">АКТ V · ВОЗВРАЩЕНИЕ В АЙОДХЬЮ</text>
 
   <!-- Main Title Text -->
-  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Праздник Тысяч Огней и Эра Рама-раджья</text>
+  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Небесная Колесница Пушпака и Священные Сандалии</text>
 </svg>

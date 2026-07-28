@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
   <defs>
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#071829"/>
-      <stop offset="100%" stop-color="#020a12"/>
+      <stop offset="0%" stop-color="#2a080c"/>
+      <stop offset="100%" stop-color="#120204"/>
     </linearGradient>
     
     <radialGradient id="goldGlow" cx="50%" cy="50%" r="50%">
@@ -48,7 +48,7 @@
     </linearGradient>
 
     <pattern id="gridPattern" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#0284c7" stroke-width="0.5" stroke-opacity="0.1"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f43f5e" stroke-width="0.5" stroke-opacity="0.1"/>
     </pattern>
   </defs>
 
@@ -57,7 +57,7 @@
   <rect width="1200" height="675" fill="url(#gridPattern)"/>
 
   <!-- Concentric Constellation Radar Rings (matching user's reference screenshot) -->
-  <g stroke="#0284c7" stroke-width="1" fill="none" opacity="0.2">
+  <g stroke="#f43f5e" stroke-width="1" fill="none" opacity="0.2">
     <circle cx="600" cy="310" r="270"/>
     <circle cx="600" cy="310" r="210" stroke-dasharray="6 6"/>
     <circle cx="600" cy="310" r="150"/>
@@ -65,30 +65,20 @@
 
   <!-- Scene Specific Center Illustration -->
   
-      <!-- Floating Stone Bridge over Oceans -->
+      <!-- Ring of Rama & Flame over Lanka Palaces -->
       <g transform="translate(600, 310)">
-        <circle cx="0" cy="0" r="210" fill="url(#blueGlow)" />
+        <circle cx="0" cy="0" r="200" fill="url(#redGlow)" />
 
-        <!-- Ocean Waves -->
-        <rect x="-300" y="40" width="600" height="130" fill="#032b45" />
+        <!-- Golden Ring of Rama -->
+        <circle cx="0" cy="-30" r="80" fill="none" stroke="url(#goldGrad)" stroke-width="16" filter="drop-shadow(0 0 15px #f59e0b)" />
+        <circle cx="0" cy="-30" r="80" fill="none" stroke="#fff" stroke-width="3" />
+        <!-- Gem on Ring -->
+        <polygon points="0,-125 -20,-105 0,-85 20,-105" fill="#ef4444" stroke="#fff" stroke-width="2" />
 
-        <!-- Rama Setu Bridge Stones -->
-        <g transform="translate(0, 20)">
-          <ellipse cx="-200" cy="40" rx="45" ry="25" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
-          <text x="-200" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#fcd34d">РАМА</text>
-
-          <ellipse cx="-110" cy="30" rx="48" ry="26" fill="#334155" stroke="#38bdf8" stroke-width="2" />
-          <text x="-110" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#fcd34d">РАМА</text>
-
-          <ellipse cx="-15" cy="20" rx="52" ry="28" fill="#1e293b" stroke="#fcd34d" stroke-width="2.5" filter="drop-shadow(0 0 10px #fcd34d)" />
-          <text x="-15" y="26" text-anchor="middle" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#ffffff">РАМА</text>
-
-          <ellipse cx="80" cy="30" rx="48" ry="26" fill="#334155" stroke="#38bdf8" stroke-width="2" />
-          <text x="80" y="35" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#fcd34d">РАМА</text>
-
-          <ellipse cx="175" cy="40" rx="45" ry="25" fill="#1e293b" stroke="#38bdf8" stroke-width="2" />
-          <text x="175" y="45" text-anchor="middle" font-family="Georgia, serif" font-size="16" font-weight="bold" fill="#fcd34d">РАМА</text>
-        </g>
+        <!-- Burning Palaces Silhouette Below -->
+        <path d="M -220 160 L -180 80 L -140 160 L -100 60 L -60 160 L 0 40 L 60 160 L 100 80 L 140 160 L 180 90 L 220 160 Z" fill="#450a0a" stroke="#f43f5e" stroke-width="2" />
+        <!-- Flames rising from Lanka -->
+        <path d="M -100 160 Q -60 90 -80 50 Q -40 100 0 30 Q 40 100 80 50 Q 60 110 100 160 Z" fill="url(#flameGrad)" opacity="0.8" />
       </g>
     
 
@@ -103,8 +93,8 @@
   <path d="M 1175 610 L 1175 650 L 1135 650" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
 
   <!-- Header Badge Text -->
-  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#0284c7" letter-spacing="5" opacity="0.95">АКТ IV · МОСТ РАМА СЕТУ</text>
+  <text x="600" y="560" text-anchor="middle" font-family="'Georgia', serif" font-size="18" fill="#f43f5e" letter-spacing="5" opacity="0.95">АКТ III · ХАНУМАН В САДУ АШОКА</text>
 
   <!-- Main Title Text -->
-  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Плавающие Камни с Именем Рамы</text>
+  <text x="600" y="608" text-anchor="middle" font-family="'Georgia', serif" font-size="30" font-weight="bold" fill="#ffffff" letter-spacing="2">Кольцо Верности и Огненная Ланка</text>
 </svg>
