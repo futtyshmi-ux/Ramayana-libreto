@@ -1,6 +1,6 @@
 {
-  "name": "Рамаяна",
-  "description": "Рамаяна — интерактивное сказание. Интерактивное погружение с анимацией, 3D и музыкой.",
+  "name": "Ramayana Interactive Viewer",
+  "description": "Interactive scene viewer with embedded WebP images",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
