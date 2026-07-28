@@ -1,13 +1,8 @@
 export function getImageUrl(image: any): string {
   if (!image) return '';
-  if (typeof image === 'string') return image;
-  if (typeof image === 'object' && image !== null) {
-    if ('default' in image && typeof image.default === 'string') {
-      return image.default;
-    }
-    if ('src' in image && typeof image.src === 'string') {
-      return image.src;
-    }
+  let url = typeof image === 'string' ? image : (image?.default || image?.src || String(image));
+  if (url.startsWith('/')) {
+    url = '.' + url;
   }
-  return String(image);
+  return url;
 }
